@@ -1,9 +1,9 @@
-# <div align='center'>Rexzy Official</div>
+# <div align='center'>LauraCode</div>
 
 ## usage
 ```
 "depencies": {
-  "@whiskeysockets/baileys": "github:rexzyofficialreal/Baileys"
+  "@whiskeysockets/baileys": "github:laura-code/Baileys"
 }
 ```
 ## Import
@@ -26,7 +26,7 @@ const {
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.rexzyofficial('Chrome'),
+  browser: Browsers.lauracode('Chrome'),
   printQRInTerminal: true
 });
 ```
@@ -40,7 +40,7 @@ const {
 } = require('@whiskeysockets/baileys');
 
 const client = makeWASocket({
-  browser: Browsers.rexzyofficial('Chrome'),
+  browser: Browsers.lauracode('Chrome'),
   printQRInTerminal: false,
   version: await fetchLatestWAWebVersion(),
   aiLabel: false // set true to show an AI label on messages sent by the bot
@@ -77,7 +77,7 @@ client.ev.on('contacts.upsert', () => {
 ## Send an orderMessage
 ```javascript
 const fs = require('fs');
-const thumbnail = fs.readFileSync('./rexzthum.jpg');
+const thumbnail = fs.readFileSync('./laura.jpg');
 
 await client.sendMessage(m.chat, {
   thumbnail,
@@ -98,7 +98,7 @@ await client.sendMessage(m.chat, {
       { optionName: "Option 2" }
     ],
     newsletter: {
-      newsletterName: "X - CYBER",
+      newsletterName: "LauraCode",
       newsletterJid: "120363424944937940@newsletter"
     }
   }
@@ -111,7 +111,7 @@ await client.relayMessage(m.chat, {
   productMessage: {
     title: "Product.pdf",
     description: "Product description",
-    thumbnail: { url: "./rexzythumb.jpg" },
+    thumbnail: { url: "./laura.jpg" },
     productId: "EXAMPLE_TOKEN",
     retailerId: "EXAMPLE_RETAILER_ID",
     url: "https://example.com",
@@ -132,7 +132,7 @@ await client.relayMessage(m.chat, {
 ## Send an interactiveMessage
 ```javascript
 await client.sendMessage(m.chat, {
-  image: { url: "./rexzyimg.jpg" },
+  image: { url: "./laura.jpg" },
   text: "body",
   title: "title", // required when sending 
 footer: "footer",
