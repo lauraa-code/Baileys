@@ -1,6 +1,6 @@
-# Contributing to Rexzy Official
+# Contributing to LauraCode
 
-Thanks for your interest in contributing! Rexzy Official is a fork of
+Thanks for your interest in contributing! LauraCode is a fork of
 [Baileys](https://github.com/WhiskeySockets/Baileys); contributions here follow
 similar conventions to the upstream project.
 
@@ -22,7 +22,7 @@ similar conventions to the upstream project.
 ## Development setup
 
 ```bash
-git clone https://github.com/rexzyofficireal/baileys.git
+git clone https://github.com/laura-code/baileys.git
 cd baileys
 npm install
 npm run build:tsc
